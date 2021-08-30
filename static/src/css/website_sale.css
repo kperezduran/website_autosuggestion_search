@@ -1,0 +1,8 @@
+.ui-autocomplete.an_shop {
+    max-height: 800px;
+    overflow-y: auto;
+    max-width: 1050px;
+}
+.an_shop .an_shop_article.ui-menu-item {
+    flex-basis: calc(33%);
+}

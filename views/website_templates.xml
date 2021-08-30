@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <template id="assets_backend" name="website_autocomplete_search assets" inherit_id="website.assets_frontend">
+            <xpath expr="." position="inside">
+                <link rel='stylesheet' href="/website_autocomplete_search/static/src/css/website_sale.css"/>
+                <script type="text/javascript"
+                    src="/website_autocomplete_search/static/src/js/website_sale.js"/>
+            </xpath>
+        </template>
+        <template id="product_image_template" inherit_id="website.layout">
+            <xpath expr="." position="inside">
+                <div id="product_image_model" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-header" style="border-bottom:none;">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">×</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="o-carousel-product_img_search" class="carousel slide" data-ride="carousel"
+                                     data-interval="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</openerp>
